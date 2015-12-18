@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  
+  <title>test</title>
+
+  <meta name="description" content="test">
+  <meta name="author" content="me">
+  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  <%= csrf_meta_tags %>
+
+
+
+
+
+
+</head>
+<body>
+
+
+
+  <div class="container-fluid">
+
+   
+    <div class="row">
+       <div class="col-md-8">
+        <a href="#"><%=image_tag "logo.jpg", alt:"logo" %></a>
+       </div>
+
+       <div class="col-md-4">
+       </div>
+
+   </div>
+
+   <div class="row">         
+
+    <div class="col-md-12">
+      <nav class="navbar navbar-default" >
+
+      </nav>
+    </div>
+   
+   </div>
+
+  <!-- top nevigation ends -->
+
+
+  <div class="row">
+
+
+    <div class="col-md-12">
+
+
+
+
+    </div>
+
+
+  </div>
+
+
+
+
+  <div class="row">
+
+    <!--Left navigation -->
+    <div class="col-md-2">
+      <%= render :partial => 'shared/leftnavigation' %>
+    </div>
+    <!--Left navigation Ends-->
+
+    <!-- Main content start -->
+    <div class="col-md-10">
+
+
+      <div class="col-md-12">
+
+
+
+
+
+<div class="ajax-progress"></div>
+<div id="replacehere" > 
+
+<%= yield %>
+
+</div>
+
+
+
+   </div>
+
+   <div class="col-md-12">
+    <br/><br/><br/><br/><br/>
+
+  </div>
+
+
+</div>
+
+
+</div>
+
+
+</body>
+
+
+
+</html>

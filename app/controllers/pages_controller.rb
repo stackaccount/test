@@ -5,7 +5,7 @@ def index
 
 end
 
-def showbycat
+def show
 
 	respond_to do |format| 
 

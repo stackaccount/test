@@ -9,7 +9,7 @@ def showbycat
 
 	respond_to do |format| 
 
-	#format.html {render 'showproducts'}
+	format.html 
 	format.js
 
 	end
